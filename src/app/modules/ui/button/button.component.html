@@ -1,0 +1,15 @@
+<button class="button" *ngIf="isRouter" [routerLink]="routerLink">
+    <ng-container *ngTemplateOutlet="buttonContent"></ng-container>
+</button>
+
+<a class="button" *ngIf="isExternal" [href]="href" [target]="target">
+    <ng-container *ngTemplateOutlet="buttonContent"></ng-container>
+</a>
+
+<button class="button" *ngIf="!isExternal && !isRouter">
+    <ng-container *ngTemplateOutlet="buttonContent"></ng-container>
+</button>
+
+<ng-template #buttonContent>
+    <ng-content></ng-content>
+</ng-template>

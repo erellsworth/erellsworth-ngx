@@ -1,0 +1,6 @@
+<header class="flex justify-content-between">
+    <div>
+        <app-button *ngIf="siteName" routerLink="/">{{siteName}}</app-button>
+    </div>
+    <ng-content></ng-content>
+</header>
