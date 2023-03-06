@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UiModule } from './modules/ui/ui.module';
+import { LayoutModule } from './modules/layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { UiModule } from './modules/ui/ui.module';
     AppRoutingModule,
     HttpClientModule,
     TransferHttpCacheModule,
+    LayoutModule,
     UiModule
   ],
   providers: [],
